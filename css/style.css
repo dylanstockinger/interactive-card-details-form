@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import '../css/components/_components.css';
+@import '../css/components/_typography.css';
+
+:root {
+  --neutral: #FFFFFF;
+  --neutral1: #DFDEE0;
+  --neutral2: #8F8694;
+
+  --primary1: #21092F;
+  --primary2: #FF5050;
+  --primary3: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+
+
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body,
+input,
+button,
+textarea {
+  font-family: 'Space Grotesk';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+@media (min-width: 1100px) {
+  .container {
+
+    height: 100vh;
+    margin: auto;
+
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.u-textfield-row {
+  display: flex;
+  gap: 8px;
+}
+
+.input-styles .textfield label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092F;
+}
+
+
+.multi-textfield {
+  display: flex;
+  gap: 11px;
+}
+
+.exp-date {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.box-image-card {
+  background-image: url("/assets/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100% 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem 1.6rem;
+
+}
+
+.box-card {
+
+  width: 100%;
+  max-width: 343px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+.first-card,
+.second-card {
+  position: relative;
+  display: flex;
+  width: 286px;
+  height: 157px;
+  background-color: green;
+  border-radius: 6px;
+}
+
+.box-top-card {
+  display: flex;
+  justify-content: flex-end;
+  height: 157px;
+
+}
+
+.first-card {
+  background-image: url("/assets/images/bg-card-back.png");
+  background-size: cover;
+  z-index: 10;
+}
+
+.second-card {
+  background-image: url("/assets/images/bg-card-front.png");
+  background-position: center;
+  top: -70px;
+  z-index: 20;
+}
